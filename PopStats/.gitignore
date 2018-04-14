@@ -1,0 +1,5 @@
+generator/data/task*/test.mat
+generator/data/task*/train.mat
+generator/data/task*/val.mat
+generator/data/task*/data_*.mat
+generator/data/task*/exp*
