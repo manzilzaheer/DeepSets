@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>DeepSets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">DeepSets</h1>
+      <h2 class="project-tagline">Project page for DeepSets</h2>
+      <a href="https://github.com/manzilzaheer/DeepSets" class="btn">View on GitHub</a>
+      <a href="https://github.com/manzilzaheer/DeepSets/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/manzilzaheer/DeepSets/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+        <figure>
+          <img src="images/deepsets-teaser.png" alt="Teaser Figure 1">
+        </figure>
+        <figure>
+            <figcaption>
+            DeepSets architecture for permutation invariant functions
+            on set inputs.</br>
+            (a) Each input x is transformed (possibly by several layers)
+            into some representation φ(x).</br>
+            (b) The representations are added up and their output is the
+            processed using the ρ network very much in the same
+            manner as in any deep network (e.g. fully connected
+            layers, nonlinearities, etc.).</br>
+            (c) <i>Optionally</i>: Use additional meta-information z
+            to obtain the conditioning mapping φ(x|z).
+            </figcaption>
+        </figure>
+    <!--figure>
+        <figcaption>
+        Visualization of the clustering used to supervise vis-w2v training.
+        Relations that co-occur more often in the same cluster appear bigger than others.
+        Observe how semantically close relations co-occur the most, e.g., eat, drink, chew on for the relation "enjoy".
+        </figcaption>
+    </figure>
+    <figure>
+      <img src="images/cluster_occur.jpg" alt="Teaser Figure 2">
+    </figure-->
+
+<h3>People:</h3>
+<table align='center'>
+    <tr>
+        <td>Manzil Zaheer [<a href='http://manzil.ml/'>Page</a>]</td>
+        <td>Satwik Kottur [<a href='https://satwikkottur.github.io/'>Page</a>]</td>
+        <td>Siamak Ravanbakhsh [<a href='http://www.cs.ubc.ca/~siamakx/'>Page</a>]</td>
+    </tr>
+    <tr>
+    <td>Barn&aacute;s P&oacute;czos [<a href='http://www.cs.cmu.edu/~bapoczos/'>Page</a>]</td>
+    <td>Ruslan Salakhutdinov [<a href='http://www.cs.cmu.edu/~rsalakhu/'>Page</a>]</td>
+    <td>Alexander Smola [<a href='https://alex.smola.org/'>Page</a>]</td>
+    </tr>
+</table>
+
+<h3>Abstract:</h3>
+<p align='justify'>
+In this paper, we study the problem of designing objective functions for machine learning problems
+defined on finite sets. In contrast to traditional objective functions defined for machine learning
+problems operating on finite dimensional vectors, the new objective functions we propose are operating
+on finite sets and are invariant to permutations.
+Such problems are widespread, ranging from estimation of population statistics, via anomaly detection 
+in piezometer data of embankment dams, to cosmology. Our main theorem characterizes
+the permutation invariant objective functions and provides a family of functions to which any permutation
+invariant objective function must belong.
+This family of functions has a special structure which enables us to design a deep network architecture
+that can operate on sets and which can be deployed on a variety of scenarios including both
+unsupervised and supervised learning tasks. We demonstrate the applicability of our method on
+population statistic estimation, point cloud classification, set expansion, and image tagging.</p>
+</p>
+
+<h3>Paper:</h3>
+    Manzil Zaheer, Satwik Kottur, Siamak Ravanbakhsh, Barn&aacute;s P&oacute;czos,
+    Ruslan Salakhutdinov, Alex Smola</br>
+    <b>DeepSets</b><br/>
+    <i>Neural Information Processing Systems (NIPS), 2017</i><b> (Oral)</b>
+    <br/>
+    [<a href='https://arxiv.org/abs/1703.06114'>Paper</a>]
+    [<a href='https://github.com/manzilzaheer/DeepSets'>Project Page</a>]
+    [<a href=''>Poster</a>]
+    [<a href='https://papers.nips.cc/paper/6931-deep-sets'>NIPS17</a>]
+
+<h3>BibTeX:</h3>
+<pre><code>@incollection{NIPS2017_6931,
+    title     = {Deep Sets},
+    author    = {Zaheer, Manzil and Kottur, Satwik and Ravanbakhsh, 
+                 Siamak and Poczos, Barnabas and Salakhutdinov, 
+                 Ruslan R and Smola, Alexander J},
+    booktitle = {Advances in Neural Information Processing Systems 30},
+    editor    = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach
+                 and R. Fergus and S. Vishwanathan and R. Garnett},
+    pages     = {3394--3404},
+    year      = {2017},
+    publisher = {Curran Associates, Inc.},
+    url       = {http://papers.nips.cc/paper/6931-deep-sets.pdf},
+}</code></pre>
+
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact:</h3>
+<p>For any questions, feel free to contact Manzil Zaheer or Satwik Kottur.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/manzilzaheer/DeepSets">DeepSets</a> is maintained by 
+        <a href="https://github.com/satwikkottur">satwikkottur</a> and <a href="https://github.com/manzilzaheer">manzilzaheer</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+    </section>
+  </body>
+</html>
