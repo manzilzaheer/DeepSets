@@ -19,7 +19,7 @@ class DataIterator(object):
             self.X = f['X'][()]
             self.d = self.X.shape[0]
             self.X = np.reshape(self.X.transpose(), [-1,self.N,self.d]).astype('float32')
-            self.y = np.squeeze(f['Y'][()]).astype('float32')
+            self.y = np.reshape(f['Y'][()],[-1,1]).astype('float32')
             #self.y = 3*(self.y + 74.74)
         
         assert len(self.y) >= self.batch_size, \
