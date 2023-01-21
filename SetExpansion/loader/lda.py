@@ -8,7 +8,7 @@ import math
 import numpy as np
 from tqdm import tqdm as progressbar
 #import matplotlib.pyplot as plt
-from dataloader import AbstractLoader
+from loader.dataloader import AbstractLoader
 
 # Preloader for LDA
 class Dataloader(AbstractLoader):
